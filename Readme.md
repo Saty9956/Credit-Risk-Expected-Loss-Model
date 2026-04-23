@@ -14,8 +14,8 @@ This project upgrades traditional binary credit scoring by implementing a machin
 1. **Data Engineering pipeline (`01_data_prep.py`):**  Ingested ~307,000 real-world loan applications.
    * Engineered domain-specific financial features (e.g., Debt-to-Income, Annuity-to-Income percent).
    * Handled extreme class imbalance (92% Repaid / 8% Default).
-2. **Model Training (`02_model_training.py`):** * Trained a LightGBM Classifier using balanced class weights to heavily penalize false negatives (missed defaults).
-3. **Business Strategy & Compliance (`03_business_explainability.py`):** * **Expected Loss Math:** Implemented the banking equation `EL = PD * LGD * EAD` to dynamically route applications (e.g., Auto-Approve, Prime Rate, Premium Rate, or Reject).
+2. **Model Training (`02_model_training.py`):** Trained a LightGBM Classifier using balanced class weights to heavily penalize false negatives (missed defaults).
+3. **Business Strategy & Compliance (`03_business_explainability.py`):**  **Expected Loss Math:** Implemented the banking equation `EL = PD * LGD * EAD` to dynamically route applications (e.g., Auto-Approve, Prime Rate, Premium Rate, or Reject).
    * **Explainable AI:** Generated SHAP summary plots to map out global risk drivers and isolate the exact variables leading to a loan denial.
 
 ## 📈 Results & Statistical Summary
