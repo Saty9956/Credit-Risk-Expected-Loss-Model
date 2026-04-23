@@ -11,7 +11,7 @@ This project upgrades traditional binary credit scoring by implementing a machin
 * **Matplotlib & Seaborn** (Data Visualization)
 
 ## 🔬 Methodology & Architecture
-1. **Data Engineering pipeline (`01_data_prep.py`):** * Ingested ~307,000 real-world loan applications.
+1. **Data Engineering pipeline (`01_data_prep.py`):**  Ingested ~307,000 real-world loan applications.
    * Engineered domain-specific financial features (e.g., Debt-to-Income, Annuity-to-Income percent).
    * Handled extreme class imbalance (92% Repaid / 8% Default).
 2. **Model Training (`02_model_training.py`):** * Trained a LightGBM Classifier using balanced class weights to heavily penalize false negatives (missed defaults).
