@@ -1,0 +1,6 @@
+# Ignore raw and processed data (Too large for GitHub)
+*.csv
+
+# Ignore Python environments
+.venv/
+__pycache__/
